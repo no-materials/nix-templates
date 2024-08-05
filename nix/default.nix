@@ -1,12 +1,12 @@
 {
   imports = [
-    ./rust.nix
+    ./bevy.nix
   ];
 
   perSystem =
     { self', pkgs, ... }:
     {
       formatter = pkgs.nixfmt-rfc-style;
-      devShells.default = self'.devShells.rust;
+      devShells.default = self'.devShells.bevy;
     };
 }

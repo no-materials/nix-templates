@@ -20,7 +20,7 @@
       fnx.targets.wasm32-unknown-unknown.stable.rust-std
     ];
 
-    devShells.rust = let
+    devShells.bevy = let
       # required for linking bevy
       extraPackages = [
         # general
@@ -42,7 +42,7 @@
       ];
     in
       pkgs.mkShell {
-        name = "Rust Shell";
+        name = "Bevy Shell";
         packages = extraPackages ++ [self'.packages.rust];
         LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath extraPackages;
       };
