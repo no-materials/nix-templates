@@ -3,13 +3,13 @@
 ## Usage
 
 ```console
-$ nix flake init --template templates#rust
+$ nix flake init -t github:no-materials/nix-templates#bevy
 ```
 
 or to specify a directory
 
 ```console
-$ nix flake new --template templates#rust ./my-new-project
+$ nix flake new -t github:no-materials/nix-templates#bevy ./test
 ```
 
 ## List
