@@ -1,23 +1,18 @@
 {
-  inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    flake-utils.url = "github:numtide/flake-utils";
+  description = "A collection of flake templates";
 
-    flake-parts = {
-      url = "github:hercules-ci/flake-parts";
-      inputs.nixpkgs-lib.follows = "nixpkgs";
+  outputs = { self }: {
+    templates = {
+      rust = {
+        path = ./rust;
+        description = "Rust template, using Fenix";
+      };
+      bevy = {
+        path = ./bevy;
+        description = "Bevy template, using stable Fenix";
+      };
     };
 
-    fenix = {
-      url = "github:nix-community/fenix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    defaultTemplate = self.templates.rust;
   };
-
-  outputs =
-    inputs@{ flake-parts, ... }:
-    flake-parts.lib.mkFlake { inherit inputs; } {
-      systems = inputs.flake-utils.lib.defaultSystems;
-      imports = [ ./nix ];
-    };
 }

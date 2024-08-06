@@ -1,7 +1,19 @@
-# Nix shells
+# Nix templates
 
 ## Usage
 
 ```console
-$ nix develop github:no-materials/nix-shells#rust-stable
+$ nix flake init --template templates#rust
+```
+
+or to specify a directory
+
+```console
+$ nix flake new --template templates#rust ./my-new-project
+```
+
+## List
+
+```console
+$ nix flake show
 ```
