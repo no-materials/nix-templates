@@ -46,7 +46,7 @@
             in
             fnx.combine all-components;
 
-          stableRust = mkRustDeriv fnx.stable [ ];
+          stableRust = mkRustDeriv fnx.stable [ fnx.targets.wasm32-unknown-unknown.stable.rust-std ];
 
           # Rust packages
           generalPkgs = with pkgs; [
