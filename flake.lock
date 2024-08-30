@@ -8,14 +8,19 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1,
-        "narHash": "sha256-j6xtzjPFUDE3fqqy3lhuJVyrWrFSLk/RMjGoJYBN2hk=",
-        "path": "./bevy",
-        "type": "path"
+        "dir": "bevy",
+        "lastModified": 1724078218,
+        "narHash": "sha256-9SzDtLqMy5+F3344tonozfAt/E6mqpo3uhP701KBNCs=",
+        "owner": "no-materials",
+        "repo": "nix-templates",
+        "rev": "6339dbb98a8823f01a2d277abbb955bfbc8010c7",
+        "type": "github"
       },
       "original": {
-        "path": "./bevy",
-        "type": "path"
+        "dir": "bevy",
+        "owner": "no-materials",
+        "repo": "nix-templates",
+        "type": "github"
       }
     },
     "fenix": {
@@ -186,14 +191,19 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1,
-        "narHash": "sha256-PD560xhmhRASFb01zWVWFciRXAHDC/snEZamjLpXPbU=",
-        "path": "./rust",
-        "type": "path"
+        "dir": "rust",
+        "lastModified": 1724078218,
+        "narHash": "sha256-9SzDtLqMy5+F3344tonozfAt/E6mqpo3uhP701KBNCs=",
+        "owner": "no-materials",
+        "repo": "nix-templates",
+        "rev": "6339dbb98a8823f01a2d277abbb955bfbc8010c7",
+        "type": "github"
       },
       "original": {
-        "path": "./rust",
-        "type": "path"
+        "dir": "rust",
+        "owner": "no-materials",
+        "repo": "nix-templates",
+        "type": "github"
       }
     },
     "rust-analyzer-src": {

@@ -2,12 +2,8 @@
   description = "A collection of flake templates";
 
   inputs = {
-    rust = {
-      url = "path:./rust";
-    };
-    bevy = {
-      url = "path:./bevy";
-    };
+    rust.url = "github:no-materials/nix-templates?dir=rust";
+    bevy.url = "github:no-materials/nix-templates?dir=bevy";
   };
 
   outputs = { self, rust, bevy }:
